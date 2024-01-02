@@ -8,6 +8,6 @@ bikesContainer.addEventListener('click', function(event) {
     if(!item) return
     viewBmx.src= item.dataset.src
     svgElement.querySelector('path').setAttribute('fill', item.dataset.color)
-    viewBmx.style.transform = `rotate(-${item.dataset.rotate}deg)`
+    viewBmx.style.rotate = `-${item.dataset.rotate}deg`
 
 })
