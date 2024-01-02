@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body,
+      main {
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+      }
+
+      @media (min-width: 768px) and (max-width: 1200px) {
+        #viewbmx {
+          rotate: -20deg;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="src/styles.css" />
+    <link rel="stylesheet" href="dist/output.css" />
+    <title>BMX</title>
+  </head>
+  <body>
+    <header class="relative">
+      <nav class="flex gap-3 justify-end p-2 items-center">
+        <img class="w-[64px]" src="imgs/logo.png" alt="" />
+        <a
+          href=""
+          class="nav__item no-underline transition-transform hover:translate-y-1 duration-300 ml-auto"
+          >Home</a
+        >
+        <a
+          href=""
+          class="nav__item no-underline transition-transform hover:translate-y-1 duration-300"
+          >Menu</a
+        >
+        <a
+          href=""
+          class="nav__item no-underline transition-transform hover:translate-y-1 duration-300"
+          >What's New</a
+        >
+        <a
+          href=""
+          class="nav__item no-underline transition-transform hover:translate-y-1 duration-300"
+          >Contact</a
+        >
+      </nav>
+    </header>
+    <div
+      class="grid grid-cols-1 bg-black mb-10 overflow-hidden main-header md:grid-cols-2"
+    >
+      <div class="text text-white flex flex-col justify-center m-9 p-5">
+        <h1 class="text-left text-5xl mb-5">
+          It's not Bike It's <br />
+          <span class="italic font-bold">BMX</span>
+        </h1>
+        <p class="text-center mb-5 p-2">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo eos
+          aliquid dolor dolorem, vero amet voluptatum autem consectetur quasi!
+          Suscipit iure, ab blanditiis similique adipisci culpa quod accusantium
+          magnam aperiam!
+        </p>
+        <button class="bg-white px-4 py-2 rounded-lg sm:mx-auto text-black">
+          Learn More
+        </button>
+      </div>
+      <div class="view relative m-6">
+        <img
+          class="absolute w-[500px] sm:w-[1000px] lg:translate-x-0 lg:translate-y-[25%] xl:translate-y-[0%] md:translate-y-[40%] md:-translate-x-[20%] lg:w-full -rotate-[12deg] transform transition-transform duration-500"
+          src="imgs/blackbmx.png"
+          alt=""
+          id="viewbmx"
+        />
+        <svg
+          class="w-full md:h-[600px]"
+          xmlns="http://www.w3.org/2000/svg"
+          id="SvgjsSvg1106"
+          x="0"
+          y="0"
+          version="1.1"
+          viewBox="0 0 499.772 499.772"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          xmlns:svgjs="http://svgjs.dev/svgjs"
+        >
+          <path
+            d="M492.692 223.646 394.345 52.979a53.123 53.123 0 0 0-46.08-26.667H151.572a53.12 53.12 0 0 0-46.08 26.027L7.145 223.006a53.333 53.333 0 0 0 0 53.333l98.347 170.667a53.332 53.332 0 0 0 46.08 26.453h196.693a53.334 53.334 0 0 0 46.08-25.813l98.347-170.667a53.76 53.76 0 0 0 0-53.333z"
+            fill="rgba(255, 255, 255, 1)"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <div class="absolute w-full top-1/2 left-auto flex">
+      <div class="social bg top-1/2 flex flex-col mr-auto gap-5 p-2">
+        <i
+          class="fa fa-facebook scale-125 text-white border-2 border-solid border-white p-1 rounded-md"
+          aria-hidden="true"
+        ></i>
+        <i
+          class="fa fa-instagram scale-125 text-white border-2 border-solid border-white p-1 rounded-md"
+          aria-hidden="true"
+        ></i>
+        <i
+          class="fa fa-twitter scale-125 text-white border-2 border-solid border-white p-1 rounded-md"
+          aria-hidden="true"
+        ></i>
+      </div>
+      <nav class="flex bikes justify-center bg-transparent flex-col gap-7">
+        <img
+          class="w-[64px] bike rounded-lg backdrop-blur-md"
+          src="imgs/blackbmx.png"
+          alt=""
+          data-src="imgs/blackbmx.png"
+          data-color="rgba(255, 255, 255, 1)"
+          data-rotate="12"
+        />
+        <img
+          class="w-[64px] bike rounded-lg backdrop-blur-md"
+          src="imgs/bluebmx.png"
+          alt=""
+          data-src="imgs/bluebmx.png"
+          data-color="rgba(164, 228, 230, 1)"
+          data-rotate="10"
+        />
+        <img
+          class="w-[64px] bike rounded-lg backdrop-blur-md"
+          src="imgs/yellowbmx.png"
+          alt=""
+          data-src="imgs/yellowbmx.png"
+          data-color="rgba(255, 90, 0, 1)"
+          data-rotate="12"
+        />
+      </nav>
+    </div>
+    <footer class="flex gap-3 justify-center items-center">
+      <a
+        href="https://t.me/mehdi_abbane"
+        class="fa fa-telegram"
+        aria-hidden="true"
+      ></a>
+      <a
+        href="https://www.facebook.com/frontendmehdi"
+        class="fa fa-facebook"
+        aria-hidden="true"
+      ></a>
+      <a
+        href="https://github.com/mehdiAbDev"
+        class="fa fa-github"
+        aria-hidden="true"
+      ></a>
+      Developed by <span class="text-red-700 font-bold"> mehdiAbDev</span>
+    </footer>
+  </body>
+  <script src="src/script.js"></script>
+  <script
+    src="https://kit.fontawesome.com/4cd15b6dbc.js"
+    crossorigin="anonymous"
+  ></script>
+</html>
