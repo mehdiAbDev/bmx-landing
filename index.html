@@ -2,16 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="imgs/logo.png">
+    <link rel="icon" href="imgs/logo.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
+     
       body,
       main {
         height: 100vh;
         width: 100vw;
         overflow-x: hidden;
       }
+      .bike:hover {
+        transform: translateX(-5px);
+      }
 
+      .learn:hover {
+        background-color: transparent !important;
+        /* background-color: white ; */
+        color: white;
+      }
       @media (min-width: 768px) and (max-width: 1200px) {
         #viewbmx {
           rotate: -20deg;
@@ -24,7 +33,7 @@
   </head>
   <body>
     <header class="relative">
-      <nav class="flex gap-3 justify-end p-2 items-center ">
+      <nav class="flex gap-3 justify-end p-2 items-center">
         <img class="w-[64px]" src="imgs/logo.png" alt="" />
         <a
           href=""
@@ -62,8 +71,8 @@
           Suscipit iure, ab blanditiis similique adipisci culpa quod accusantium
           magnam aperiam!
         </p>
-        <button class="bg-white px-4 py-2 rounded-lg sm:mx-auto font-bold
-        transition-colors duration-500 text-black ">
+        <button
+          class="learn w-[170px] h-[60px] z-10 bg-white hover:bg-transparent hover:text-white border-2 border-white  rounded font-bold transition-colors duration-500 text-black">
           Learn More
         </button>
       </div>
@@ -109,26 +118,26 @@
       </div>
       <nav class="flex bikes justify-center bg-transparent flex-col gap-7">
         <img
-          class="w-[64px] bike cursor-pointer hover:-translate-x-1 transition-transform duration-500 rounded-lg backdrop-blur-md"
+          class="w-[64px] bike cursor-pointer transition-transform duration-500 rounded-lg backdrop-blur-md"
           src="imgs/blackbmx.png"
           alt=""
-          data-src="imgs/blackbmx.png"
+          data-src="imgs/blackbmx"
           data-color="rgba(255, 255, 255, 1)"
           data-rotate="12"
         />
         <img
-          class="w-[64px] bike cursor-pointer hover:-translate-x-1 transition-transform duration-500 rounded-lg backdrop-blur-md"
+          class="w-[64px] bike cursor-pointer transition-transform duration-500 rounded-lg backdrop-blur-md"
           src="imgs/bluebmx.png"
           alt=""
-          data-src="imgs/bluebmx.png"
+          data-src="imgs/bluebmx"
           data-color="rgba(164, 228, 230, 1)"
           data-rotate="10"
         />
         <img
-          class="w-[64px] bike cursor-pointer hover:-translate-x-1 transition-transform duration-500 rounded-lg backdrop-blur-md"
+          class="w-[64px] bike cursor-pointer transition-transform duration-500 rounded-lg backdrop-blur-md"
           src="imgs/yellowbmx.png"
           alt=""
-          data-src="imgs/yellowbmx.png"
+          data-src="imgs/yellowbmx"
           data-color="rgba(255, 90, 0, 1)"
           data-rotate="15"
         />
